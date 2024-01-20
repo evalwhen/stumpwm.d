@@ -1,0 +1,18 @@
+#!/bin/sh
+#|-*- mode:lisp -*-|#
+#|
+exec ros -Q -- $0 "$@"
+|#
+
+(progn 
+  #+quicklisp (ql:quickload '(stumpwm slynk) :silent t)
+)
+
+(defpackage :ros.script.stumpwm.3749863733
+  (:use :cl))
+(in-package :ros.script.stumpwm.3749863733)
+
+(defun main (&rest argv)
+  (declare (ignorable argv))
+  (slynk:create-server :port 4004 :dont-close t)
+  (stumpwm:stumpwm))

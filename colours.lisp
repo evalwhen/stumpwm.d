@@ -1,0 +1,298 @@
+;;;; colours.lisp --- Define colours
+
+;;  This file is NOT part of StumpWM.
+;;
+;; This file is free software; you can redistribute it and/or modify it under
+;; the terms of the GNU General Public License as published by the Free Software
+;; Foundation; either version 3, or (at your option) any later version.
+
+;; This file is distributed in the hope that it will be useful, but WITHOUT ANY
+;; WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+;; A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License along with
+;; this software; see the file COPYING.  If not, see
+;; <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+;;
+;; Define variables for all colours used in the modus themes vivendi for Emacs.
+;; Furthermore, a set of variables is defined to be used to configure overall
+;; colour theme throughout the configuration.
+;;
+;;; Code:
+
+;;; All colours used by the modus themes vivendi theme for Emacs
+(defvar +modus-vivendi-bg-main+ "#000000")
+(defvar +modus-vivendi-bg-dim+ "#1e1e1e")
+(defvar +modus-vivendi-fg-main+ "#ffffff")
+(defvar +modus-vivendi-fg-dim+ "#989898")
+(defvar +modus-vivendi-fg-alt+ "#c6daff")
+(defvar +modus-vivendi-bg-active+ "#535353")
+(defvar +modus-vivendi-bg-inactive+ "#303030")
+(defvar +modus-vivendi-border+ "#646464")
+(defvar +modus-vivendi-red+ "#ff5f59")
+(defvar +modus-vivendi-red-warmer+ "#ff6b55")
+(defvar +modus-vivendi-red-cooler+ "#ff7f9f")
+(defvar +modus-vivendi-red-faint+ "#ff9580")
+(defvar +modus-vivendi-red-intense+ "#ff5f5f")
+(defvar +modus-vivendi-green+ "#44bc44")
+(defvar +modus-vivendi-green-warmer+ "#70b900")
+(defvar +modus-vivendi-green-cooler+ "#00c06f")
+(defvar +modus-vivendi-green-faint+ "#88ca9f")
+(defvar +modus-vivendi-green-intense+ "#44df44")
+(defvar +modus-vivendi-yellow+ "#d0bc00")
+(defvar +modus-vivendi-yellow-warmer+ "#fec43f")
+(defvar +modus-vivendi-yellow-cooler+ "#dfaf7a")
+(defvar +modus-vivendi-yellow-faint+ "#d2b580")
+(defvar +modus-vivendi-yellow-intense+ "#efef00")
+(defvar +modus-vivendi-blue+ "#2fafff")
+(defvar +modus-vivendi-blue-warmer+ "#79a8ff")
+(defvar +modus-vivendi-blue-cooler+ "#00bcff")
+(defvar +modus-vivendi-blue-faint+ "#82b0ec")
+(defvar +modus-vivendi-blue-intense+ "#338fff")
+(defvar +modus-vivendi-magenta+ "#feacd0")
+(defvar +modus-vivendi-magenta-warmer+ "#f78fe7")
+(defvar +modus-vivendi-magenta-cooler+ "#b6a0ff")
+(defvar +modus-vivendi-magenta-faint+ "#caa6df")
+(defvar +modus-vivendi-magenta-intense+ "#ff66ff")
+(defvar +modus-vivendi-cyan+ "#00d3d0")
+(defvar +modus-vivendi-cyan-warmer+ "#4ae2f0")
+(defvar +modus-vivendi-cyan-cooler+ "#6ae4b9")
+(defvar +modus-vivendi-cyan-faint+ "#9ac8e0")
+(defvar +modus-vivendi-cyan-intense+ "#00eff0")
+(defvar +modus-vivendi-rust+ "#db7b5f")
+(defvar +modus-vivendi-gold+ "#c0965b")
+(defvar +modus-vivendi-olive+ "#9cbd6f")
+(defvar +modus-vivendi-slate+ "#76afbf")
+(defvar +modus-vivendi-indigo+ "#9099d9")
+(defvar +modus-vivendi-maroon+ "#cf7fa7")
+(defvar +modus-vivendi-pink+ "#d09dc0")
+(defvar +modus-vivendi-bg-red-intense+ "#9d1f1f")
+(defvar +modus-vivendi-bg-green-intense+ "#2f822f")
+(defvar +modus-vivendi-bg-yellow-intense+ "#7a6100")
+(defvar +modus-vivendi-bg-blue-intense+ "#1640b0")
+(defvar +modus-vivendi-bg-magenta-intense+ "#7030af")
+(defvar +modus-vivendi-bg-cyan-intense+ "#2266ae")
+(defvar +modus-vivendi-bg-red-subtle+ "#620f2a")
+(defvar +modus-vivendi-bg-green-subtle+ "#00422a")
+(defvar +modus-vivendi-bg-yellow-subtle+ "#4a4000")
+(defvar +modus-vivendi-bg-blue-subtle+ "#242679")
+(defvar +modus-vivendi-bg-magenta-subtle+ "#552f5f")
+(defvar +modus-vivendi-bg-cyan-subtle+ "#004065")
+(defvar +modus-vivendi-bg-red-nuanced+ "#2c0614")
+(defvar +modus-vivendi-bg-green-nuanced+ "#001904")
+(defvar +modus-vivendi-bg-yellow-nuanced+ "#221000")
+(defvar +modus-vivendi-bg-blue-nuanced+ "#0f0e39")
+(defvar +modus-vivendi-bg-magenta-nuanced+ "#230631")
+(defvar +modus-vivendi-bg-cyan-nuanced+ "#041529")
+(defvar +modus-vivendi-bg-ochre+ "#442c2f")
+(defvar +modus-vivendi-bg-lavender+ "#38325c")
+(defvar +modus-vivendi-bg-sage+ "#0f3d30")
+(defvar +modus-vivendi-bg-graph-red-0+ "#b52c2c")
+(defvar +modus-vivendi-bg-graph-red-1+ "#702020")
+(defvar +modus-vivendi-bg-graph-green-0+ "#4fd100")
+(defvar +modus-vivendi-bg-graph-green-1+ "#007800")
+(defvar +modus-vivendi-bg-graph-yellow-0+ "#f1e00a")
+(defvar +modus-vivendi-bg-graph-yellow-1+ "#b08600")
+(defvar +modus-vivendi-bg-graph-blue-0+ "#2fafef")
+(defvar +modus-vivendi-bg-graph-blue-1+ "#1f2f8f")
+(defvar +modus-vivendi-bg-graph-magenta-0+ "#bf94fe")
+(defvar +modus-vivendi-bg-graph-magenta-1+ "#5f509f")
+(defvar +modus-vivendi-bg-graph-cyan-0+ "#47dfea")
+(defvar +modus-vivendi-bg-graph-cyan-1+ "#00808f")
+(defvar +modus-vivendi-bg-completion+ "#2f447f")
+(defvar +modus-vivendi-bg-hover+ "#004f70")
+(defvar +modus-vivendi-bg-hover-secondary+ "#654a39")
+(defvar +modus-vivendi-bg-hl-line+ "#2f3849")
+(defvar +modus-vivendi-bg-region+ "#5a5a5a")
+(defvar +modus-vivendi-fg-region+ "#ffffff")
+(defvar +modus-vivendi-bg-char-0+ "#0050af")
+(defvar +modus-vivendi-bg-char-1+ "#7f1f7f")
+(defvar +modus-vivendi-bg-char-2+ "#625a00")
+(defvar +modus-vivendi-bg-mode-line-active+ "#505050")
+(defvar +modus-vivendi-fg-mode-line-active+ "#ffffff")
+(defvar +modus-vivendi-border-mode-line-active+ "#959595")
+(defvar +modus-vivendi-bg-mode-line-inactive+ "#2d2d2d")
+(defvar +modus-vivendi-fg-mode-line-inactive+ "#969696")
+(defvar +modus-vivendi-border-mode-line-inactive+ "#606060")
+(defvar +modus-vivendi-modeline-err+ "#ffa9bf")
+(defvar +modus-vivendi-modeline-warning+ "#dfcf43")
+(defvar +modus-vivendi-modeline-info+ "#9fefff")
+(defvar +modus-vivendi-bg-tab-bar+ "#313131")
+(defvar +modus-vivendi-bg-tab-current+ "#000000")
+(defvar +modus-vivendi-bg-tab-other+ "#545454")
+(defvar +modus-vivendi-bg-added+ "#00381f")
+(defvar +modus-vivendi-bg-added-faint+ "#002910")
+(defvar +modus-vivendi-bg-added-refine+ "#034f2f")
+(defvar +modus-vivendi-bg-added-fringe+ "#237f3f")
+(defvar +modus-vivendi-fg-added+ "#a0e0a0")
+(defvar +modus-vivendi-fg-added-intense+ "#80e080")
+(defvar +modus-vivendi-bg-changed+ "#363300")
+(defvar +modus-vivendi-bg-changed-faint+ "#2a1f00")
+(defvar +modus-vivendi-bg-changed-refine+ "#4a4a00")
+(defvar +modus-vivendi-bg-changed-fringe+ "#8a7a00")
+(defvar +modus-vivendi-fg-changed+ "#efef80")
+(defvar +modus-vivendi-fg-changed-intense+ "#c0b05f")
+(defvar +modus-vivendi-bg-removed+ "#4f1119")
+(defvar +modus-vivendi-bg-removed-faint+ "#380a0f")
+(defvar +modus-vivendi-bg-removed-refine+ "#781a1f")
+(defvar +modus-vivendi-bg-removed-fringe+ "#b81a1f")
+(defvar +modus-vivendi-fg-removed+ "#ffbfbf")
+(defvar +modus-vivendi-fg-removed-intense+ "#ff9095")
+(defvar +modus-vivendi-bg-diff-context+ "#1a1a1a")
+(defvar +modus-vivendi-bg-paren-match+ "#2f7f9f")
+(defvar +modus-vivendi-bg-paren-expression+ "#453040")
+(defvar +modus-vivendi-fringe+ "#1e1e1e")
+(defvar +modus-vivendi-cursor+ "#ffffff")
+(defvar +modus-vivendi-keybind+ "#00bcff")
+(defvar +modus-vivendi-name+ "#feacd0")
+(defvar +modus-vivendi-identifier+ "#d2b580")
+(defvar +modus-vivendi-err+ "#ff5f59")
+(defvar +modus-vivendi-warning+ "#fec43f")
+(defvar +modus-vivendi-info+ "#6ae4b9")
+(defvar +modus-vivendi-underline-err+ "#ff5f5f")
+(defvar +modus-vivendi-underline-warning+ "#d0bc00")
+(defvar +modus-vivendi-underline-note+ "#00d3d0")
+(defvar +modus-vivendi-builtin+ "#f78fe7")
+(defvar +modus-vivendi-comment+ "#989898")
+(defvar +modus-vivendi-constant+ "#00bcff")
+(defvar +modus-vivendi-docstring+ "#9ac8e0")
+(defvar +modus-vivendi-docmarkup+ "#caa6df")
+(defvar +modus-vivendi-fnname+ "#feacd0")
+(defvar +modus-vivendi-keyword+ "#b6a0ff")
+(defvar +modus-vivendi-preprocessor+ "#ff7f9f")
+(defvar +modus-vivendi-string+ "#79a8ff")
+(defvar +modus-vivendi-type+ "#6ae4b9")
+(defvar +modus-vivendi-variable+ "#00d3d0")
+(defvar +modus-vivendi-rx-construct+ "#00c06f")
+(defvar +modus-vivendi-rx-backslash+ "#feacd0")
+(defvar +modus-vivendi-accent-0+ "#00bcff")
+(defvar +modus-vivendi-accent-1+ "#f78fe7")
+(defvar +modus-vivendi-accent-2+ "#6ae4b9")
+(defvar +modus-vivendi-accent-3+ "#d0bc00")
+(defvar +modus-vivendi-fg-button-active+ "#ffffff")
+(defvar +modus-vivendi-fg-button-inactive+ "#989898")
+(defvar +modus-vivendi-bg-button-active+ "#535353")
+(defvar +modus-vivendi-bg-button-inactive+ "#1e1e1e")
+(defvar +modus-vivendi-fg-completion-match-0+ "#00bcff")
+(defvar +modus-vivendi-fg-completion-match-1+ "#f78fe7")
+(defvar +modus-vivendi-fg-completion-match-2+ "#6ae4b9")
+(defvar +modus-vivendi-fg-completion-match-3+ "#d0bc00")
+(defvar +modus-vivendi-date-common+ "#00d3d0")
+(defvar +modus-vivendi-date-deadline+ "#ff5f59")
+(defvar +modus-vivendi-date-event+ "#c6daff")
+(defvar +modus-vivendi-date-holiday+ "#feacd0")
+(defvar +modus-vivendi-date-now+ "#ffffff")
+(defvar +modus-vivendi-date-scheduled+ "#fec43f")
+(defvar +modus-vivendi-date-weekday+ "#00d3d0")
+(defvar +modus-vivendi-date-weekend+ "#ff9580")
+(defvar +modus-vivendi-fg-line-number-inactive+ "#989898")
+(defvar +modus-vivendi-fg-line-number-active+ "#ffffff")
+(defvar +modus-vivendi-bg-line-number-inactive+ "#1e1e1e")
+(defvar +modus-vivendi-bg-line-number-active+ "#535353")
+(defvar +modus-vivendi-fg-link+ "#79a8ff")
+(defvar +modus-vivendi-underline-link+ "#79a8ff")
+(defvar +modus-vivendi-fg-link-symbolic+ "#00d3d0")
+(defvar +modus-vivendi-underline-link-symbolic+ "#00d3d0")
+(defvar +modus-vivendi-fg-link-visited+ "#feacd0")
+(defvar +modus-vivendi-underline-link-visited+ "#feacd0")
+(defvar +modus-vivendi-mail-cite-0+ "#79a8ff")
+(defvar +modus-vivendi-mail-cite-1+ "#dfaf7a")
+(defvar +modus-vivendi-mail-cite-2+ "#6ae4b9")
+(defvar +modus-vivendi-mail-cite-3+ "#ff7f9f")
+(defvar +modus-vivendi-mail-part+ "#2fafff")
+(defvar +modus-vivendi-mail-recipient+ "#b6a0ff")
+(defvar +modus-vivendi-mail-subject+ "#f78fe7")
+(defvar +modus-vivendi-mail-other+ "#caa6df")
+(defvar +modus-vivendi-fg-prompt+ "#6ae4b9")
+(defvar +modus-vivendi-prose-block+ "#989898")
+(defvar +modus-vivendi-prose-code+ "#6ae4b9")
+(defvar +modus-vivendi-prose-done+ "#44bc44")
+(defvar +modus-vivendi-prose-macro+ "#b6a0ff")
+(defvar +modus-vivendi-prose-metadata+ "#989898")
+(defvar +modus-vivendi-prose-metadata-value+ "#c6daff")
+(defvar +modus-vivendi-prose-table+ "#c6daff")
+(defvar +modus-vivendi-prose-tag+ "#caa6df")
+(defvar +modus-vivendi-prose-todo+ "#ff5f59")
+(defvar +modus-vivendi-prose-verbatim+ "#f78fe7")
+(defvar +modus-vivendi-rainbow-0+ "#ffffff")
+(defvar +modus-vivendi-rainbow-1+ "#ff66ff")
+(defvar +modus-vivendi-rainbow-2+ "#00eff0")
+(defvar +modus-vivendi-rainbow-3+ "#ff6b55")
+(defvar +modus-vivendi-rainbow-4+ "#efef00")
+(defvar +modus-vivendi-rainbow-5+ "#b6a0ff")
+(defvar +modus-vivendi-rainbow-6+ "#44df44")
+(defvar +modus-vivendi-rainbow-7+ "#79a8ff")
+(defvar +modus-vivendi-rainbow-8+ "#f78fe7")
+(defvar +modus-vivendi-fg-heading-0+ "#6ae4b9")
+(defvar +modus-vivendi-fg-heading-1+ "#ffffff")
+(defvar +modus-vivendi-fg-heading-2+ "#d2b580")
+(defvar +modus-vivendi-fg-heading-3+ "#82b0ec")
+(defvar +modus-vivendi-fg-heading-4+ "#feacd0")
+(defvar +modus-vivendi-fg-heading-5+ "#88ca9f")
+(defvar +modus-vivendi-fg-heading-6+ "#ff9580")
+(defvar +modus-vivendi-fg-heading-7+ "#9ac8e0")
+(defvar +modus-vivendi-fg-heading-8+ "#989898")
+
+;;; Set the eight basic colours for StumpWM
+;; syntax: (list normal-colour bright-colour)
+(setq *colors*
+      (list (list +modus-vivendi-bg-dim+  +modus-vivendi-bg-main+)         ; 0 black
+            (list +modus-vivendi-red+     +modus-vivendi-red-intense+)     ; 1 red
+            (list +modus-vivendi-green+   +modus-vivendi-green-intense+)   ; 2 green
+            (list +modus-vivendi-yellow+  +modus-vivendi-yellow-intense+)  ; 3 yellow
+            (list +modus-vivendi-blue+    +modus-vivendi-blue-intense+)    ; 4 blue
+            (list +modus-vivendi-magenta+ +modus-vivendi-magenta-intense+) ; 5 magenta
+            (list +modus-vivendi-cyan+    +modus-vivendi-cyan-intense+)    ; 6 cyan
+            (list +modus-vivendi-fg-dim+  +modus-vivendi-fg-main+)         ; 7 white
+            ;; Add some extra colours
+            (list +modus-vivendi-keybind+                                  ; 8 keybind
+                  +modus-vivendi-modeline-info+)                           ; 8 (bright) mode line
+            (list +modus-vivendi-modeline-warning+                         ; 9 mode line
+                  +modus-vivendi-modeline-err+)))
+
+;;; Define some recurring colours
+;; Main colours
+(defparameter +al/colour-fg+     +modus-vivendi-fg-main+)
+(defparameter +al/colour-bg+     +modus-vivendi-bg-main+)
+(defparameter +al/colour-accent+ +modus-vivendi-indigo+)
+
+(defparameter +al/colour-fg-active+   +al/colour-fg+)
+(defparameter +al/colour-bg-active+   +modus-vivendi-bg-blue-subtle+)
+(defparameter +al/colour-fg-inactive+ +modus-vivendi-fg-mode-line-inactive+)
+(defparameter +al/colour-bg-inactive+ +modus-vivendi-bg-mode-line-inactive+)
+
+;; Borders
+(defparameter +al/colour-border-focus+   +al/colour-accent+)
+(defparameter +al/colour-border-unfocus+ +modus-vivendi-border+)
+
+(defparameter +al/colour-border-float-focus+   +al/colour-accent+)
+(defparameter +al/colour-border-float-unfocus+ +modus-vivendi-border+)
+
+;; Mode line
+(defparameter +al/colour-mode-line-fg+   +modus-vivendi-fg-mode-line-inactive+)
+(defparameter +al/colour-mode-line-bg+   +modus-vivendi-bg-mode-line-inactive+)
+(defparameter +al/colour-mode-line-info+ +modus-vivendi-modeline-info+)
+
+(defparameter +al/colour-window-fg-active+   +al/colour-fg-active+)
+(defparameter +al/colour-window-bg-active+   +al/colour-bg-active+)
+(defparameter +al/colour-window-fg-inactive+ +al/colour-fg-inactive+)
+(defparameter +al/colour-window-bg-inactive+ +al/colour-bg-inactive+)
+(defparameter +al/colour-window-fg-urgent+   +modus-vivendi-fg-main+)
+(defparameter +al/colour-window-bg-urgent+   +modus-vivendi-bg-red-subtle+)
+
+(defparameter +al/colour-class-counter-fg-active+   +al/colour-fg-active+)
+(defparameter +al/colour-class-counter-bg-active+   +modus-vivendi-bg-magenta-subtle+)
+(defparameter +al/colour-class-counter-fg-inactive+ +al/colour-fg-inactive+)
+(defparameter +al/colour-class-counter-bg-inactive+ +modus-vivendi-bg-lavender+)
+
+(defparameter +al/colour-group-fg-active+ +al/colour-fg-active+)
+(defparameter +al/colour-group-bg-active+ +al/colour-bg-active+)
+
+(when *initializing*
+  (update-color-map (current-screen)))
+
+;; Local Variables:
+;; jinx-local-words: "vivendi"
+;; End:

@@ -1,0 +1,5 @@
+auth-ncmpcpp-pi
+build/
+debug-output.txt
+stumpwm.log.*
+*.log
