@@ -322,6 +322,11 @@
 
 (define-key *root-map* (kbd "c") '*al/winner-map*)
 
+;;; NetworkManager
+
+;;; from stump-wm module
+;; (define-key *root-map* (kbd "C-w") "nm-list-wireless-networks")
+
 ;;; Utilities
 (define-key *root-map* (kbd "C-s") "swm-ssh-menu")
 

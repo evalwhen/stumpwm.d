@@ -98,10 +98,11 @@
       (list "[%n]"                      ; Groups
             "%v"                        ; Windows
             "^>"                        ; Push right
+            " | %B"
             " | %M"
             " | %d"                     ;; Clock
             ;; '(:eval (al/battery:battery-mode-line))
-))                   
+            ))                   
 
 
 

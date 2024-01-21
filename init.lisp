@@ -69,7 +69,7 @@
 (load-module "winner-mode")
 ;; control, replace with pamixer
 (load-module "stump-volume-control")
-
+;; (load-module "stump-nm")
 
 
 (ql:quickload "cl-ppcre")
