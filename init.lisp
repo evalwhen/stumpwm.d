@@ -110,15 +110,15 @@
 ;; (al/load "pamixer")
 
 ;; Useful for debugging
-;; (setq *debug-level* 5)
-;; (redirect-all-output (data-dir-file "debug-output" "txt"))
+(setq *debug-level* 5)
+(redirect-all-output (data-dir-file "debug-output" "txt"))
 
 (defun load-swank ()
   "Load a swank server"
   (ql:quickload :slynk)
   (require 'slynk)
   (slynk:create-server :dont-close t)
-)
+  )
 ;; (load-wank)
 
 

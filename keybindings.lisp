@@ -150,7 +150,7 @@
 (setf *frame-number-map* "asdfghjkl")
 
 ;; (define-key *root-map* (kbd "2") "vsplit-and-focus")
-;; (define-key *root-map* (kbd "s") "hsplit-and-focus")
+(define-key *root-map* (kbd "s") "hsplit-and-focus")
 ;; (define-key *root-map* (kbd "0") "remove-split")
 
 ;;; Windows
