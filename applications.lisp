@@ -34,7 +34,7 @@
 (defvar +al/app-api-tester+      "postman")
 ;; (defvar +al/app-terminal+        "kitty")
 (defvar +al/app-terminal+        "xfce4-terminal")
-(defvar +al/app-web-browser+     "GDK_SCALE=2 GDK_DPI_SCALE=0 WEBKIT_DISABLE_COMPOSITING_MODE=1 start-nyxt")
+(defvar +al/app-web-browser+     "GDK_SCALE=2 GDK_DPI_SCALE=0 WEBKIT_DISABLE_COMPOSITING_MODE=1 nyxt")
 (defvar +al/app-web-browser-alt+ "firefox")
 (defvar +al/app-youtube+         "freetube")
 

@@ -28,6 +28,7 @@
 
   (al/run-in-thread "exec ~/.nutstore/dist/bin/nutstore-pydaemon.py")
   (al/run-in-thread "mihomo -d ~/.config/clash")
+  (al/run-in-thread "syndaemon -i 1 -K -R -d")
   (al/run-in-thread +al/app-web-browser+)
   (al/run-in-thread +al/app-editor+)
   (al/run-in-thread +al/app-terminal+)
