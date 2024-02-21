@@ -33,7 +33,7 @@
 ;;                                :subfamily "Solid"
 ;;                                :size 12)))
 
-(set-font (make-instance 'xft:font :family "Fira Code Retina" :subfamily "Regular" :size 16))
+(set-font (make-instance 'xft:font :family "Hack" :subfamily "Regular" :size 18))
 
 ;;; Convenience parameters
 (defparameter +al/font-main+ "^f0")

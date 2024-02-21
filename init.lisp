@@ -110,7 +110,7 @@
 ;; (al/load "pamixer")
 
 ;; Useful for debugging
-(setq *debug-level* 5)
+(setq *debug-level* 1)
 (redirect-all-output (data-dir-file "debug-output" "txt"))
 
 (defun load-swank ()

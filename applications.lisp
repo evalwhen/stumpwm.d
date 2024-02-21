@@ -35,7 +35,7 @@
 ;; (defvar +al/app-terminal+        "kitty")
 (defvar +al/app-terminal+        "xfce4-terminal")
 (defvar +al/app-web-browser+     "GDK_SCALE=2 GDK_DPI_SCALE=0 WEBKIT_DISABLE_COMPOSITING_MODE=1 nyxt")
-(defvar +al/app-web-browser-alt+ "firefox")
+(defvar +al/app-web-browser-alt+ "GDK_SCALE=2 GDK_DPI_SCALE=0 firefox")
 (defvar +al/app-youtube+         "freetube")
 
 ;; (defvar +al/app-music-player+    (concat +al/app-terminal+ " ncmpcpp"))
